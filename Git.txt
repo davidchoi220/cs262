@@ -1,0 +1,6 @@
+% cd cs262
+
+% git add .
+% git commit -m "comment"
+% git push origin master
+
