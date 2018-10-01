@@ -1,6 +1,6 @@
 % cd cs262
-
-% git add .
+% git status (checking that all files are up to date)
+% git add . (Add all files that has been modified)
 % git commit -m "comment"
 % git push 
 
