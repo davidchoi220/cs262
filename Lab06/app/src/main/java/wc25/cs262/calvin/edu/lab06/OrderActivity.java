@@ -1,4 +1,4 @@
-package wc25.cs262.calvin.edu.lab04;
+package wc25.cs262.calvin.edu.lab06;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

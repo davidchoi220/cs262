@@ -1,8 +1,6 @@
 package wc25.cs262.calvin.edu.simplecalculator;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import android.widget.AdapterView.OnItemSelectedListener;
 
 
