@@ -1,4 +1,4 @@
-package wc25.cs262.calvin.edu.homework2;
+package wc25.cs262.calvin.edu.hw02;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("wc25.cs262.calvin.edu.homework2", appContext.getPackageName());
+        assertEquals("wc25.cs262.calvin.edu.hw02", appContext.getPackageName());
     }
 }

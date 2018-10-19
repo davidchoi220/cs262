@@ -1,4 +1,4 @@
-package wc25.cs262.calvin.edu.homework2;
+package wc25.cs262.calvin.edu.hw02;
 
 import org.junit.Test;
 
