@@ -1,0 +1,7 @@
+A) Yes their Trello board show fair amount of work being done each week, however,I'm seeing a balance of work between each members for this team. 
+
+B) This team's application is to help people manage their time. It seems pretty clear in the vision statement, that their ultimate goal is to help people improve in their time management. Time management is key, especially for college students, for a successful college life. Their UI model and class model is well organized and formulated because I could see the strong basis, or infastructure of the app.
+
+C)I could see that they have quite a lot of work done, but I could not run the app.
+ 
+D) Yes, their supplemental specifications address non-functional requirements.
