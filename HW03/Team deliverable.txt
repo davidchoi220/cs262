@@ -1,0 +1,7 @@
+A) Yes, from their presentation, I was able to see huge amount of updates from the last time I saw them. There were a lot of new features, and more user stories put into action.
+
+B) They used the phone's hard drive to store their data and their demo showed that it was working the way they want it to. When data were stored , they were sorted by time automatically, making it easy for users to keep track of their events.  Their UI model looked very well organized.
+
+C) Yes, their demo ran without any bugs or errors. It didn't crash and ran smoothly. The app had updated features compared to when the last deliverable was due. 
+ 
+D) It was effective but I hoped that their UI would be much simpler. They needed some reorganizing of data input fields. 

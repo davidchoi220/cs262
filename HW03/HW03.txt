@@ -1,0 +1,7 @@
+A)It uses http method and because its stateless, I would say that the service is RESTful. 
+
+B) Idempotent - Get, Put, and Delete. You can call them again even after they are called already. However, get is nullipotent because it doesn't update the server the first time its called.
+
+C) There are lots of evidence of impedance mismatch, being encapsulated, and mapped object oriented to relational.
+
+D) Yes, because it is not secure and it is easy to inject bad data into the database.
