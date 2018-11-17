@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HW02</string>
     <string name="input">Enter a value!     </string>
-    <string name="loading">Loading...</string>
+    <string name="loading">Loading #8230</string>
     <string name="enter_search">Please enter a search term</string>
     <string name="check_internet">Please check your network connection and try again.</string>
     <string name="input_text">Please enter a positive number.</string>

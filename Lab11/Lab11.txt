@@ -1,0 +1,47 @@
+HW1
+
+CODE FORMATTING: 22 Line Adjustments
+STATIC CODE CHECKING:
+	Android: 
+		Accessibility: 
+			Missing accessibility label: where minSdk < 17, you should provide an 'android:hint'
+				added android:hint=""
+		Correctness:
+			Obsolete Gradle Dependency
+				A newer version of com.android.tools.build:gradle than 3.2.0 is available: 3.2.1
+		Internationalization:
+				String literal in 'setText' can not be translated. Use Android resources instead.
+					Used Android resources instead
+		Usability:
+			Use autofill:
+				Missing 'autofillHints' attribute > added autofillHints Attribute
+	Java:
+		Declaration Redundancy:
+			Use weaker declaration > private declaration
+		Probable Bugs:
+			String values are compared using == not .equals() > 
+				(opSelected == "+") -> (opSelected.equals("+"))
+	Spelling:
+		TYPOS have been fixed
+
+HW2
+
+CODE FORMATTING: 19 Lines Adjustments
+STATIC CODE CHECKING:
+	Android:
+		Correctness: A newer version of com.android.tools.build:gradle than 3.2.0 is available: 3.2.1
+			Didn't bother to change this because I thought it was unnecessary and time consuming.
+		Internationalization: Hardcoded string "Fetch", should use '@string' resource
+			Extracted to string resource
+		Typography: Replace "..." with ellipsis character
+			... -> #8230
+	JAVA:
+		Code Maturity:Declaration redundancy
+			Can be package-private > declaration changed to private
+		Java language level migration aids
+			'StringBuffer buffer' may be declared as 'StringBuilder'
+				Changed StringBuffer to StringBuilder
+		Probable Bugs:Variable 'playerJSONString' initializer 'null' is redundant
+			String playerJSONString = null; -> String playerJSONString;
+			
+		

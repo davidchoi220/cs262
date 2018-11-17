@@ -21,7 +21,7 @@ public class NetworkUtils {
         if (queryString == "-1") {
             HttpURLConnection urlConnection = null;
             BufferedReader reader = null;
-            String playerJSONString = null;
+            String playerJSONString;
             try {
                 URL requestURL = new URL(Player_URL.toString());
                 urlConnection = (HttpURLConnection) requestURL.openConnection();
@@ -61,7 +61,7 @@ public class NetworkUtils {
         }   else {
             HttpURLConnection urlConnection = null;
             BufferedReader reader = null;
-            String playerJSONString = null;
+            String playerJSONString;
             try {
                 String specURL = Player_ID_URL + queryString;
                 URL requestURL = new URL(specURL.toString());

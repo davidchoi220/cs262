@@ -14,46 +14,37 @@ import android.widget.TextView;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 
-
-
 public class MainActivity extends Activity implements OnItemSelectedListener {
 
     Button buttonCalculate;
     EditText val1, val2;
     TextView tv1;
     Spinner spinOps;
-    String opselected;
+    String opSelected;
     String[] ops = {"+", "-", "*", "/"};
-    double a, b,c;
+    double a, b, c;
 
 
-    private OnClickListener myClickListener = new OnClickListener(){
+    private OnClickListener myClickListener = new OnClickListener() {
 
         @Override
         public void onClick(View v) {
             a = Double.parseDouble(val1.getText().toString());
             b = Double.parseDouble(val2.getText().toString());
 
-            if(opselected== "+"){
+            if (opSelected.equals("+")) {
                 c = a + b;
                 tv1.setText(Double.toString(c));
-            }
-
-            else if(opselected== "-"){
+            } else if (opSelected == "-") {
                 c = a - b;
                 tv1.setText(Double.toString(c));
-            }
-
-            else if(opselected=="*"){
+            } else if (opSelected == "*") {
                 c = a * b;
                 tv1.setText(Double.toString(c));
-            }
-
-            else if(opselected=="/"){
+            } else if (opSelected == "/") {
                 c = a / b;
                 tv1.setText(Double.toString(c));
-            }
-            else{
+            } else {
                 tv1.setText("Select operation!");
             }
 
@@ -65,19 +56,19 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tv1 = (TextView)findViewById(R.id.result);
+        tv1 = (TextView) findViewById(R.id.result);
 
 
-        buttonCalculate = (Button)findViewById(R.id.buttonCalculate);
+        buttonCalculate = (Button) findViewById(R.id.buttonCalculate);
         buttonCalculate.setText("Result: ");
         buttonCalculate.setOnClickListener(myClickListener);
 
-        val1 = (EditText)findViewById(R.id.editText4);
+        val1 = (EditText) findViewById(R.id.editText4);
         val1.setText("");
-        val2 = (EditText)findViewById(R.id.editText6);
+        val2 = (EditText) findViewById(R.id.editText6);
         val2.setText("");
 
-        spinOps = (Spinner)findViewById(R.id.spinner01);
+        spinOps = (Spinner) findViewById(R.id.spinner01);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                 this, android.R.layout.simple_spinner_item, ops);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -88,8 +79,8 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        opselected=ops[position];
-        tv1.setText("You have chosen " + opselected);
+        opSelected = ops[position];
+        tv1.setText("You have chosen " + opSelected);
     }
 
     @Override

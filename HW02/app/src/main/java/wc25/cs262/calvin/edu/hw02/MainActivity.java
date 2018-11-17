@@ -11,11 +11,12 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 
-public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<String>{
+public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<String> {
 
     private EditText mInput;
     private TextView mText;
@@ -25,12 +26,12 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mInput = (EditText)findViewById(R.id.numberInput);
-        mText = (TextView)findViewById(R.id.titleText);
+        mInput = (EditText) findViewById(R.id.numberInput);
+        mText = (TextView) findViewById(R.id.titleText);
 
 
-        if(getSupportLoaderManager().getLoader(0)!=null){
-            getSupportLoaderManager().initLoader(0,null,this);
+        if (getSupportLoaderManager().getLoader(0) != null) {
+            getSupportLoaderManager().initLoader(0, null, this);
         }
 
         String queryString = "0"; //set to 0 so results won't show once app starts
@@ -39,14 +40,12 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
-        if (networkInfo != null && networkInfo.isConnected() && queryString.length()!=0) {
+        if (networkInfo != null && networkInfo.isConnected() && queryString.length() != 0) {
             mText.setText(R.string.loading);
             Bundle queryBundle = new Bundle();
             queryBundle.putString("queryString", queryString);
             getSupportLoaderManager().restartLoader(0, queryBundle, this);
-        }
-
-        else {
+        } else {
             if (queryString.length() == 0) {
                 mText.setText(R.string.enter_search);
             } else {
@@ -71,14 +70,12 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
-        if (networkInfo != null && networkInfo.isConnected() && queryString.length()!=0) {
+        if (networkInfo != null && networkInfo.isConnected() && queryString.length() != 0) {
             mText.setText(R.string.loading);
             Bundle queryBundle = new Bundle();
             queryBundle.putString("queryString", queryString);
             getSupportLoaderManager().restartLoader(0, queryBundle, this);
-        }
-
-        else {
+        } else {
             if (queryString.length() == 0) {
                 mText.setText(R.string.input_text);
             } else {
@@ -122,14 +119,14 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                     } else {
                         title = title + "\n" + id + ", " + name + ", " + eMail;
                     }
-                } catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
                 i++;
             }
 
 
-            if (title != null){
+            if (title != null) {
                 mText.setText(title);
                 mInput.setText("");
             } else {
@@ -137,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 mText.setText("2");
             }
 
-        } catch(Exception e) {
+        } catch (Exception e) {
             try {
                 JSONObject jsonObject = new JSONObject(data);
                 String title = null;
@@ -166,5 +163,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
     @Override
-    public void onLoaderReset(Loader<String> loader) {}
+    public void onLoaderReset(Loader<String> loader) {
+    }
 }
