@@ -1,0 +1,3 @@
+A) Team G had sufficient amount of functionality for me to do the testing to the point where I thought I could actually be using this application for personal use. The application wasn't perfect but had enough functions working. The testing went smooth and they took my feedback with respect. After the official test ended, we had some extra conversation regarding the application and how we could make more improvements. I was impressed how few changes were made (based on my feedback) when we had our stakeholder meeting the next day. 
+
+B) The team had significant amount of code push into their client repo. I could tell this even without their repo because they had so much functionality added to their prototype. 
