@@ -1,0 +1,11 @@
+Ty - Everyone on the team appreciates all his work on the database server. From the beginning of the semester, he was hoping to focus on the database part of the project. It it wasn't for him, I'm not sure if we would have a functional server to store all our data in.
+
+Quentin - He was very skill with Javascript and did tremendous amount of coding for this project. 
+
+Derek - Although he was busy with work, he always willing to help the rest of the group in whatever we needed help with. He did most of the organizing of the tasks that needed to be done for each deliverable and also organizing of the Trello board.
+
+Thomas - He was very talented and also was willing to help out in every aspect of the project. If we needed more user stories implemented, he worked on it. When Ty needed help with implementing the database server, he was willing to help. 
+
+Jordan - He was the most passionate person in the group and was very diligent in terms of showing up for group meeting. He was a big help in the usability test and the presentation because while working in CIT, he was the one to set up the tech station in every classroom and knew how to set up for testing and presentation. 
+
+David(me) - My weakness was with coding. I was able to help at the beginning of the semester where I implemented this I learned in the android lab. As semester progressed, our team members were just so talented in coding that I felt I could possibly mess up our project. So, I moved on to other end of the project such as usability testing because I wanted to participate and be a help to our group. 
